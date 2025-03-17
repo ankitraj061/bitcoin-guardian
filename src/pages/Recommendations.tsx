@@ -14,7 +14,7 @@ const Recommendations = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-12">
-        <div className="mb-10">
+        <div className="mb-10 mt-10">
           <h1 className="text-4xl font-bold mb-4">AI-Powered Recommendations</h1>
           <p className="text-muted-foreground max-w-3xl">
             Get personalized Bitcoin investment recommendations based on real-time market analysis and your risk profile.

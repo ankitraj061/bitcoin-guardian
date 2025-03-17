@@ -10,7 +10,7 @@ const SmartContracts = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-12">
-        <div className="mb-10">
+        <div className="mb-10 mt-10">
           <h1 className="text-4xl font-bold mb-4">Smart Contracts & Auto-Reallocation</h1>
           <p className="text-muted-foreground max-w-3xl">
             Leverage the power of automated smart contracts and AI-driven asset reallocation to optimize your Bitcoin portfolio and secure your assets.
