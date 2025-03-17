@@ -1,12 +1,15 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Send } from "lucide-react";
 import BitcoinChart from "@/components/BitcoinChart";
 import RiskAssessment from "@/components/RiskAssessment";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import InterestRates from "@/components/InterestRates";
+import ChatBox from "@/components/ChatBox";
 
 const BitcoinInfo = () => {
   const [timeframe, setTimeframe] = useState("1d");
@@ -40,6 +43,13 @@ const BitcoinInfo = () => {
                   </div>
                 </div>
                 <BitcoinChart timeframe={timeframe} />
+              </CardContent>
+            </Card>
+            
+            <Card className="glass-card mt-6">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4">Interest Rates</h3>
+                <InterestRates />
               </CardContent>
             </Card>
           </div>
@@ -78,6 +88,13 @@ const BitcoinInfo = () => {
                     </div>
                   </div>
                 </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="glass-card mt-6">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4">BitChat Assistant</h3>
+                <ChatBox />
               </CardContent>
             </Card>
           </div>
