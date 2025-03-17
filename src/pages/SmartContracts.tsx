@@ -1,9 +1,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { FileText, XOctagon } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import SmartContractPanel from "@/components/SmartContractPanel";
 import AssetAllocationPanel from "@/components/AssetAllocationPanel";
 
@@ -11,90 +9,99 @@ const SmartContracts = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      
-      <main className="flex-grow pt-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold gradient-text">Smart Contracts & Asset Allocation</h1>
-            <p className="text-muted-foreground mt-2">
-              Automated portfolio management and asset protection features
-            </p>
-          </div>
-          
-          <div className="mb-12">
-            <SmartContractPanel />
-          </div>
-          
-          <div className="mb-12">
-            <AssetAllocationPanel />
-          </div>
-          
-          <div className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="glass-card">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4">How Smart Contracts Work</h3>
-                
-                <p className="text-muted-foreground mb-4">
-                  Smart contracts are self-executing contracts with the terms directly written into code. 
-                  They automatically enforce and execute agreements without intermediaries.
-                </p>
-                
-                <ol className="space-y-3 list-decimal list-inside text-muted-foreground">
-                  <li>Define your contract terms and allocation preferences</li>
-                  <li>Our system converts your preferences into secure code</li>
-                  <li>The contract executes automatically when conditions are met</li>
-                  <li>All transactions are recorded and verified on the blockchain</li>
-                  <li>Monitor and modify your contracts through our dashboard</li>
-                </ol>
-                
-                <div className="mt-6">
-                  <Button variant="outline" className="flex items-center">
-                    <FileText size={18} className="mr-2" />
-                    Learn More About Smart Contracts
-                  </Button>
+      <main className="flex-grow container mx-auto px-4 py-12">
+        <div className="mb-10">
+          <h1 className="text-4xl font-bold mb-4">Smart Contracts & Auto-Reallocation</h1>
+          <p className="text-muted-foreground max-w-3xl">
+            Leverage the power of automated smart contracts and AI-driven asset reallocation to optimize your Bitcoin portfolio and secure your assets.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          <SmartContractPanel />
+          <AssetAllocationPanel />
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Card className="glass-card">
+            <CardHeader>
+              <CardTitle>Secure Storage</CardTitle>
+              <CardDescription>Cold wallet integration</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground">
+                Connect your hardware wallets and set up automatic transfers to cold storage for enhanced security.
+              </p>
+              <div className="mt-4 p-3 bg-muted rounded-lg">
+                <div className="flex justify-between items-center text-xs">
+                  <span>Ledger compatibility</span>
+                  <span className="text-green-500">Available</span>
                 </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="glass-card">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4">Safety & Security</h3>
-                
-                <div className="space-y-4">
-                  <div className="bg-muted/10 p-4 rounded-lg">
-                    <h4 className="font-medium mb-1">Multi-signature Authentication</h4>
-                    <p className="text-sm text-muted-foreground">
-                      All smart contracts require multiple signatures for execution, providing an extra layer of security.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-muted/10 p-4 rounded-lg">
-                    <h4 className="font-medium mb-1">Audit Trail</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Every action is recorded and immutably stored on the blockchain, ensuring complete transparency.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-muted/10 p-4 rounded-lg">
-                    <h4 className="font-medium mb-1">Cancellation Options</h4>
-                    <p className="text-sm text-muted-foreground">
-                      All contracts can be cancelled within a 24-hour window with proper authentication.
-                    </p>
-                  </div>
+                <div className="flex justify-between items-center text-xs mt-2">
+                  <span>Trezor compatibility</span>
+                  <span className="text-green-500">Available</span>
                 </div>
-                
-                <div className="mt-6">
-                  <Button variant="outline" className="flex items-center text-destructive">
-                    <XOctagon size={18} className="mr-2" />
-                    Emergency Contract Suspension
-                  </Button>
+                <div className="flex justify-between items-center text-xs mt-2">
+                  <span>Multi-sig support</span>
+                  <span className="text-green-500">Available</span>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="glass-card">
+            <CardHeader>
+              <CardTitle>Automated Trading</CardTitle>
+              <CardDescription>AI-powered trading algorithms</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground">
+                Set up rule-based trading strategies that execute automatically based on market conditions.
+              </p>
+              <div className="mt-4 p-3 bg-muted rounded-lg">
+                <div className="flex justify-between items-center text-xs">
+                  <span>DCA strategy</span>
+                  <span className="text-green-500">Available</span>
+                </div>
+                <div className="flex justify-between items-center text-xs mt-2">
+                  <span>Grid trading</span>
+                  <span className="text-green-500">Available</span>
+                </div>
+                <div className="flex justify-between items-center text-xs mt-2">
+                  <span>Limit orders</span>
+                  <span className="text-green-500">Available</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="glass-card">
+            <CardHeader>
+              <CardTitle>Tax Optimization</CardTitle>
+              <CardDescription>Minimize tax liability</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground">
+                Intelligently manage your transactions to optimize for tax efficiency and maintain compliance.
+              </p>
+              <div className="mt-4 p-3 bg-muted rounded-lg">
+                <div className="flex justify-between items-center text-xs">
+                  <span>Tax-loss harvesting</span>
+                  <span className="text-green-500">Available</span>
+                </div>
+                <div className="flex justify-between items-center text-xs mt-2">
+                  <span>FIFO/LIFO methods</span>
+                  <span className="text-green-500">Available</span>
+                </div>
+                <div className="flex justify-between items-center text-xs mt-2">
+                  <span>Transaction reports</span>
+                  <span className="text-green-500">Available</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </main>
-      
       <Footer />
     </div>
   );

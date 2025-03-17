@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Bitcoin } from "lucide-react";
+import { Bitcoin, TrendingUp } from "lucide-react";
 
 const HeroSection = () => {
   return (
