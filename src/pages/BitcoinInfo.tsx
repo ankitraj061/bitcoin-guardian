@@ -29,36 +29,14 @@ const BitcoinInfo = () => {
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-2xl font-semibold">Price Chart</h2>
                   <div className="flex space-x-2">
-                    <TabsList>
-                      <TabsTrigger 
-                        value="1d" 
-                        className={timeframe === "1d" ? "bg-primary text-white" : ""}
-                        onClick={() => setTimeframe("1d")}
-                      >
-                        1D
-                      </TabsTrigger>
-                      <TabsTrigger 
-                        value="1w" 
-                        className={timeframe === "1w" ? "bg-primary text-white" : ""}
-                        onClick={() => setTimeframe("1w")}
-                      >
-                        1W
-                      </TabsTrigger>
-                      <TabsTrigger 
-                        value="1m" 
-                        className={timeframe === "1m" ? "bg-primary text-white" : ""}
-                        onClick={() => setTimeframe("1m")}
-                      >
-                        1M
-                      </TabsTrigger>
-                      <TabsTrigger 
-                        value="1y" 
-                        className={timeframe === "1y" ? "bg-primary text-white" : ""}
-                        onClick={() => setTimeframe("1y")}
-                      >
-                        1Y
-                      </TabsTrigger>
-                    </TabsList>
+                    <Tabs value={timeframe} onValueChange={setTimeframe}>
+                      <TabsList>
+                        <TabsTrigger value="1d">1D</TabsTrigger>
+                        <TabsTrigger value="1w">1W</TabsTrigger>
+                        <TabsTrigger value="1m">1M</TabsTrigger>
+                        <TabsTrigger value="1y">1Y</TabsTrigger>
+                      </TabsList>
+                    </Tabs>
                   </div>
                 </div>
                 <BitcoinChart timeframe={timeframe} />

@@ -113,29 +113,13 @@ const Recommendations = () => {
               <CardContent>
                 <div className="mb-6">
                   <p className="text-sm mb-3">Select your risk tolerance:</p>
-                  <TabsList className="w-full">
-                    <TabsTrigger 
-                      value="conservative" 
-                      className={riskLevel === "conservative" ? "bg-green-500/80 text-white" : ""}
-                      onClick={() => setRiskLevel("conservative")}
-                    >
-                      Conservative
-                    </TabsTrigger>
-                    <TabsTrigger 
-                      value="moderate" 
-                      className={riskLevel === "moderate" ? "bg-primary text-white" : ""}
-                      onClick={() => setRiskLevel("moderate")}
-                    >
-                      Moderate
-                    </TabsTrigger>
-                    <TabsTrigger 
-                      value="aggressive" 
-                      className={riskLevel === "aggressive" ? "bg-red-500/80 text-white" : ""}
-                      onClick={() => setRiskLevel("aggressive")}
-                    >
-                      Aggressive
-                    </TabsTrigger>
-                  </TabsList>
+                  <Tabs value={riskLevel} onValueChange={setRiskLevel}>
+                    <TabsList className="w-full">
+                      <TabsTrigger value="conservative">Conservative</TabsTrigger>
+                      <TabsTrigger value="moderate">Moderate</TabsTrigger>
+                      <TabsTrigger value="aggressive">Aggressive</TabsTrigger>
+                    </TabsList>
+                  </Tabs>
                 </div>
                 
                 <div className="bg-muted/20 p-5 rounded-lg space-y-4">
