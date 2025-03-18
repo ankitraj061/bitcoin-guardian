@@ -11,6 +11,7 @@ import SmartContracts from "./pages/SmartContracts";
 import Recommendations from "./pages/Recommendations";
 import NotFound from "./pages/NotFound";
 import ChatDialog from "./components/ChatDialog";
+import Dashboar from "./components/DashBoard";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/fraud-detection" element={<FraudDetection />} />
             <Route path="/smart-contracts" element={<SmartContracts />} />
             <Route path="/recommendations" element={<Recommendations />} />
+            <Route path="/dashboard" element={<Dashboar />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
