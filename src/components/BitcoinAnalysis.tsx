@@ -181,7 +181,7 @@ const BitcoinAnalysis = () => {
                   <span className="text-muted-foreground">AI Confidence</span>
                   <span className={`font-medium ${getSignalColor()}`}>{confidence}%</span>
                 </div>
-                <Progress value={confidence} className="h-2" indicatorClassName={getSignalBgColor()} />
+                <Progress value={confidence} className="h-2" style={{ ["--progress-background" as any]: getSignalBgColor() }} />
               </div>
               
               <div className="mt-6 space-y-3">
