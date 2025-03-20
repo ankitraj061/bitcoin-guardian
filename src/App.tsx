@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,10 +8,11 @@ import BitcoinInfo from "./pages/BitcoinInfo";
 import FraudDetection from "./pages/FraudDetection";
 import SmartContracts from "./pages/SmartContracts";
 import Recommendations from "./pages/Recommendations";
+import Dashboard from "./components/DashBoard"; // Fixed typo in the component name
 import NotFound from "./pages/NotFound";
-import ChatDialog from "./components/ChatDialog";
-import Dashboar from "./components/DashBoard";
-
+import ChatbotWidget from "./components/ChatBotWidget";
+import Pricing from "./pages/Pricing";
+// Create a client for React Query
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -28,11 +28,12 @@ const App = () => {
             <Route path="/fraud-detection" element={<FraudDetection />} />
             <Route path="/smart-contracts" element={<SmartContracts />} />
             <Route path="/recommendations" element={<Recommendations />} />
-            <Route path="/dashboard" element={<Dashboar />} />
+            <Route path="/dashboard" element={<Dashboard />} /> {/* Fixed the component name */}
+            <Route path="/pricing" element={<Pricing />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <ChatDialog />
+          <ChatbotWidget />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
