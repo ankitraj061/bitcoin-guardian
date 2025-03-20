@@ -12,7 +12,7 @@ interface SuspiciousActivity {
 }
 
 const FraudDetectionPanel = () => {
-  // This would be fetched from an API in a real application
+  
   const [activities, setActivities] = useState<SuspiciousActivity[]>([
     {
       type: "Unusual Transaction",
@@ -146,9 +146,9 @@ const FraudDetectionPanel = () => {
         </div>
         
         <div className="mt-6 pt-6 border-t border-muted">
-          <h4 className="font-medium mb-3">AI Fraud Detection</h4>
+          <h4 className="font-medium mb-3">Fraud Detection</h4>
           <p className="text-sm text-muted-foreground">
-            Our AI continuously monitors blockchain transactions, exchange activities, and community signals to identify potential 
+            Our Fraud detection system continuously monitors blockchain transactions, exchange activities, and community signals to identify potential 
             fraud, suspicious activities, and market manipulation tactics that could impact Bitcoin prices or security.
           </p>
         </div>

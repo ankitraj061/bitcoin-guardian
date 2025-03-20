@@ -32,6 +32,7 @@ const Navbar = () => {
     { name: 'Fraud Detection', path: '/fraud-detection' },
     { name: 'Smart Contracts', path: '/smart-contracts' },
     { name: 'Recommendations', path: '/recommendations' },
+    { name: 'Pricing', path: '/pricing' },
   ];
 
   return (
