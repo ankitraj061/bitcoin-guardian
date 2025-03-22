@@ -12,6 +12,8 @@ import Dashboard from "./components/DashBoard"; // Fixed typo in the component n
 import NotFound from "./pages/NotFound";
 import ChatbotWidget from "./components/ChatBotWidget";
 import Pricing from "./pages/Pricing";
+import SignupPage from "./pages/SignupPage";
+
 // Create a client for React Query
 const queryClient = new QueryClient();
 
@@ -30,6 +32,7 @@ const App = () => {
             <Route path="/recommendations" element={<Recommendations />} />
             <Route path="/dashboard" element={<Dashboard />} /> {/* Fixed the component name */}
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/signup" element={<SignupPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -86,7 +86,12 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/dashboard">
               <Button variant="outline" size="sm" className="font-medium">
-                Log In
+                DashBoard
+              </Button>
+            </Link>
+            <Link to="/signup">
+              <Button variant="outline" size="sm" className="font-medium">
+                Sign Up
               </Button>
             </Link>
           </div>
@@ -139,10 +144,11 @@ const Navbar = () => {
                   </Button>
                 </Link>
                 <Link to="/signup" className="flex-1">
-                  <Button className="w-full bg-primary hover:bg-primary/90">
+                  <Button variant="outline" className="w-full">
                     Sign Up
                   </Button>
                 </Link>
+                
               </div>
             </div>
           </motion.div>

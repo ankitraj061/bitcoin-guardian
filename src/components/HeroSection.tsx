@@ -133,9 +133,6 @@ const HeroSection = () => {
                   </div>
                 ))}
               </div>
-              <p className="ml-0 sm:ml-4 text-sm text-muted-foreground">
-                Joined by <span className="font-medium text-foreground">2,500+</span> Bitcoin investors worldwide
-              </p>
             </div>
             
             <div className="hidden sm:flex items-center gap-8 mt-8">
