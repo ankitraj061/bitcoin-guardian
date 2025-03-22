@@ -163,7 +163,7 @@ const HeroSection = () => {
                   <Bitcoin size={100} className="text-primary opacity-20 mb-4" />
                   <div className="text-center z-10">
                     <h3 className="text-3xl font-bold mb-2">BitGuardian</h3>
-                    <p className="text-muted-foreground">AI-Powered Protection</p>
+                    <p className="text-muted-foreground">Advanced Protection</p>
                     
                     <div className="mt-6 pt-6 border-t border-primary/10 w-full">
                       <div className="flex justify-between items-center">

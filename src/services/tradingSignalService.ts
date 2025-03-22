@@ -23,12 +23,9 @@ export interface TradingSignals {
 
 /**
  * Generates trading signals similar to TradingView
- * Note: In a real app, this would call a trading API like TradingView
  */
 export const generateTradingSignals = async (): Promise<TradingSignals> => {
   try {
-    // In a production app, you would call a real API
-    // For demo purposes, we'll simulate technical analysis
     
     // Generate random but realistic-looking signal data
     const generateRandomDistribution = (bias: 'buy' | 'neutral' | 'sell') => {
