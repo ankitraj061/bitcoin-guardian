@@ -10,6 +10,7 @@ import FraudDetection from "./pages/FraudDetection";
 import SmartContracts from "./pages/SmartContracts";
 import Recommendations from "./pages/Recommendations";
 import NotFound from "./pages/NotFound";
+import Dashboard from "./components/Dashboard"; 
 import ChatbotWidget from "./components/ChatBotWidget";
 import Pricing from "./pages/Pricing";
 
@@ -38,7 +39,6 @@ const App = () => {
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <ChatDialog />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
