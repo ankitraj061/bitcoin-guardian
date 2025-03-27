@@ -85,12 +85,13 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/dashboard">
               <Button variant="outline" size="sm" className="font-medium">
-                DashBoard
+
               </Button>
             </Link>
-            <Link to="/signup">
+            <Link to="/sign-up">
               <Button variant="outline" size="sm" className="font-medium">
-                Sign Up
+                SignUp
+
               </Button>
             </Link>
           </div>
