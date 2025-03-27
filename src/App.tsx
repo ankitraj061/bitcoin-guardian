@@ -12,6 +12,7 @@ import Dashboard from "./components/DashBoard"; // Fixed typo in the component n
 import NotFound from "./pages/NotFound";
 import ChatbotWidget from "./components/ChatBotWidget";
 import Pricing from "./pages/Pricing";
+import SignUp from "./components/SignUp";
 // Create a client for React Query
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/bitcoin-info" element={<BitcoinInfo />} />
+            <Route path="/sign-up" element={<SignUp />} />
             <Route path="/fraud-detection" element={<FraudDetection />} />
             <Route path="/smart-contracts" element={<SmartContracts />} />
             <Route path="/recommendations" element={<Recommendations />} />
