@@ -11,9 +11,9 @@ const FraudDetection = () => {
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-12">
         <div className="mb-10 mt-10">
-          <h1 className="text-4xl font-bold mb-4">Fraud Detection System</h1>
+          <h1 className="text-4xl font-bold mb-4">AI Fraud Detection</h1>
           <p className="text-muted-foreground max-w-3xl">
-            BitGuardian's Fraud detection constantly monitors the blockchain for suspicious activities and potential threats to your Bitcoin assets. Stay protected with real-time alerts and smart risk assessment.
+            BitGuardian's AI constantly monitors the blockchain for suspicious activities and potential threats to your Bitcoin assets. Stay protected with real-time alerts and smart risk assessment.
           </p>
         </div>
         
@@ -26,7 +26,7 @@ const FraudDetection = () => {
             <Card className="glass-card">
               <CardHeader>
                 <CardTitle>How It Works</CardTitle>
-                <CardDescription>Our security system</CardDescription>
+                <CardDescription>Our AI-powered security system</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -37,7 +37,7 @@ const FraudDetection = () => {
                     <div>
                       <h3 className="text-sm font-medium">Continuous Monitoring</h3>
                       <p className="text-xs text-muted-foreground">
-                        Our system analyzes blockchain transactions 24/7 to identify suspicious patterns.
+                        Our AI analyzes blockchain transactions 24/7 to identify suspicious patterns.
                       </p>
                     </div>
                   </div>
@@ -61,7 +61,7 @@ const FraudDetection = () => {
                     <div>
                       <h3 className="text-sm font-medium">Threat Assessment</h3>
                       <p className="text-xs text-muted-foreground">
-                        Our risk scoring helps you understand the severity of potential threats.
+                        AI-powered risk scoring helps you understand the severity of potential threats.
                       </p>
                     </div>
                   </div>

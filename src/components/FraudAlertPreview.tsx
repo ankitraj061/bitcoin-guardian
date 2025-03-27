@@ -57,7 +57,7 @@ const FraudAlertPreview = () => {
         </div>
         
         <p className="text-sm text-muted-foreground mb-6">
-          Our Fraud detection system monitors blockchain transactions and market activities to protect your investments from fraudulent activities.
+          Our AI-powered system monitors blockchain transactions and market activities to protect your investments from fraudulent activities.
         </p>
         
         <Link to="/fraud-detection" className="w-full block">
